@@ -15,3 +15,23 @@ Affichez les x premières valeurs des n premières tables de multiplication :
 */
 // Commencez par demander à l'utilisateur jusqu'à quelle table de multiplication il souhaite aller et combien de valeurs il souhaite afficher pour chaque table.
 // Ensuite, utilisez une ou plusieurs boucles pour calculer et afficher les x premières valeurs des n premières tables de multiplication.
+
+const table = parseInt(prompt("Je peux afficher les n premières tables de multiplications. Dites moi à laquelle vous souhiatez que je m'arrête. Par exmeple, si vous entrez 4, je vous afficherai les tables de multiplication par 1, par 2, par 3, par 4. Jusqu'à qu'elle table voulez-vous que j'aille?"))
+const valeur= parseInt(prompt("Combien de valeurs souhaitez-vous afficher pour chacune de ces tables ?"))
+
+console.log(`"OK, je vais vous afficher les ${valeur} premières valeurs des ${table} premières tables de multiplication." `);
+
+if (table && valeur){
+    if (table>0 && valeur>0){
+        for (let i = 1; i <=table; i++){
+            console.log(`Voici les ${valeur} premières valeurs de la table de la table de multiplication par ${i}`)
+            for (let j = 1; j <=valeur; j++){
+                console.log(`${j} * ${i} = ${i*j}`);
+            }
+        }
+    } else {
+        console.log("Entrez un nombre positif")
+    }
+} else {
+    console.log("Entrez un nombre entier")
+}

@@ -20,3 +20,24 @@ Pour chaque itération, assurez-vous de vous arrêter après avoir affiché les 
 */
 
 
+const table = parseInt(prompt("Entrez un nombre pour avoir sa table de multiplication"))
+
+console.log(`Je voudrais afficher les 10 premières valeurs de la table de multiplication par ${table}`);
+console.log(`Voici les 10 premières valeurs de la table de multiplication par ${table}`)
+
+let i = 1
+
+if (table){
+    if (table>0){
+        while (i<=10) {
+            console.log(`${i} * ${table} = ${i*table}`);
+            i++;
+        }
+    } else {
+        console.log("Entrez un nombre positif");
+    }
+} else {
+    console.log("Entrez un nombre entier");
+}
+
+

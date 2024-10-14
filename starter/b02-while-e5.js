@@ -25,7 +25,10 @@ BONUS :
 - Après avoir quitté la boucle, affichez dans la console la chaîne complète saisie par l'utilisateur en concaténant les lettres.
 */
 
-
+let lettre = "";
+while (lettre !== "X") {
+    lettre = prompt("Tapez une lettre ou X pour sortir : ");
+}
 
 
 

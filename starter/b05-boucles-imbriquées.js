@@ -22,3 +22,17 @@
   - Écrivez l'expression à afficher dans le console.log d'une manière alternative,
     en utilisant le concept de template littéral.
 */
+
+for (let i = 1; i < 10; i++) {
+    for (let j = i; j < 10; j++) {
+        console.log(`nbre = ${i}, ${i} <= 10 true, affiche ${i}, nbre passe à ${i}+1 = ${i+1}`);
+    }
+}
+
+
+/*for (let i = 1; i <= 10; i++) {
+    for (let j = i; i <= i*10; j+=1) {
+        console.log(`nbre = ${i}, ${i} <= 10 true, affiche ${i}, nbre passe à ${i}+1 = ${i+1}`);
+    }
+}
+*/
